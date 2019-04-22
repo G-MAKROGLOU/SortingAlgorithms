@@ -31,6 +31,7 @@ int selectionSort(int arr[0]){
                 currentIndex = l;
             }
         }
+        //IMPLEMENTATION OF THE SWAP() METHOD ORIGINALLY INCLUDED IN <cstdlib>
         int temp = arr[k];
         arr[k] = arr[currentIndex];
         arr[currentIndex] = temp;
@@ -52,6 +53,7 @@ int main()
         cout<<arrayA[i]<<"|";
     }
     cout<<endl<<endl;
+    //cout<<"The address of the first array is: "<<&arrayA<<endl;
     cout<<"The address of the first element of the array is:"<<&arrayA[0]<<endl;
     bubbleSort(&arrayA[0]);
 
@@ -64,6 +66,7 @@ int main()
         cout<<arrayB[i]<<"|";
     }
     cout<<endl<<endl;
+    //cout<<"The address of the second array is: "<<&arrayB<<endl;
     cout<<"The address of the first element of the array is:"<<&arrayB[0]<<endl;
     selectionSort(&arrayB[0]);
 
